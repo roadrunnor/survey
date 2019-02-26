@@ -1,0 +1,46 @@
+h1 {
+  text-transform: uppercase;
+  text-align: center
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+input, label, textarea, select, button {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.description-ideas {
+  font-size: 28px;
+  text-align: center;
+}
