@@ -1,0 +1,90 @@
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+input, label, textarea, select, button {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+#title {
+  margin-bottom: 10px;
+}
+
+#description {
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  flex-direction: row;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+}
+
+#rowTab {
+  display: flex;
+  justify-content: center;
+}
+
+.rowTab {
+  display: flex;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+input {
+    padding: 5px;
+}
+
+.rightTab {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 20%;
+  padding-top: 11px;
+  margin-left: 2px;
+  justify-content: center;
+}
