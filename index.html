@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device=width, initial-scale=1">
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     <title>Survey Exercise - freeCodeCamp</title>
@@ -10,8 +10,8 @@
     <header>
       <h1 id="title">RoadFactory Form</h1>
       <div id="form-outer">
-        <form id="survey-form" >
-          <div id="rowTab" class="rowTab">
+        <form id="survey-form">
+          <div class="rowTab" id="rowTab">
             <div class="description">
               <p id="description">Take an Idea and Run With It</p>
             </div>
@@ -26,7 +26,7 @@
           </div>
           <div class="rowTab">
             <div class="labels">
-              <label for="email-label">Email Address :</label>
+              <label id="email-label" for="email-label">Email Address :</label>
             </div>
             <div class="rightTab">
               <input id="email-label" type="text" name="email" value="" placeholder=" Enter a Valid Email Address" required aria-required="true">
@@ -42,7 +42,7 @@
           </div>
           <div class="rowTab">
             <div class="labels">
-              <label for="number-label">Age :</label>
+              <label id="number-label" for="number-label">Age :</label>
             </div>
             <div class="rightTab">
               <input id="number-label" class="input-field" type="number" name="age" value="" placeholder=" Enter your Age" min="1" max="110" required aria-required="true">
@@ -50,35 +50,76 @@
           </div>
           <div class="rowTab">
             <div class="labels">
-              <label for="userRating">* How likely is that you would recommend RoadFactory to a friend?</label>
-            <div class="rowRight">
-              <ul >
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+              <label for="currentRole"> * Which option best describes your current role?</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="currentRole" class="dropdown">
+                <option value="Selection" disabled>Make a Selection</option>
+                <option value="School">Student</option>
+                <option value="Company">Company Employee</option>
+                <option value="Company">Company Owner</option>
+                <option value="Cultural">Cultural Organism Employee</option>
+                <option value="Cultural">Cultural Organism Owner</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labelRating">
+              <label for="recommendation">* How likely is that you would recommend RoadFactory to a friend?</label>
+            </div>
+            <div class="rightTabRadio">
+              <ul style="list-style: none;">
+                <li id="recommendation" class="radio"><label>Most Definitely<input type="radio" name="userRatings" value="1" class="textLeft"></label></li>
+                <li id="recommendation" class="radio"><label>Definitely<input type="radio" name="userRatings" value="1" class="textLeft"></label></li>
+                <li id="recommendation" class="radio"><label>May Be<input type="radio" name="userRatings" value="1" class="textLeft"></label></li>
+                <li id="recommendation" class="radio"><label>Not Sure<input type="radio" name="userRatings" value="1" class="textLeft"></label></li>
               </ul>
             </div>
+          </div>
+          <div class="rowTab">
+            <div class="labelRating">
+              <label for="improvements">* Future improvements details (check all if apply):</label>
+            </div>
+            <div class="rightTabCheckbox">
+              <ul style="list-style: none;">
+                <li id="improvements" class="radio"><label>Front-end Projects<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Back-end Projects<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Data Visualization<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Challenges<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Open Source Community<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Gitter help rooms<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Videos<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>City Meetups<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Wiki<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Forum<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+                <li id="improvements" class="radio"><label>Additional Courses<input type="checkbox" name="improvements" value="1" class="textLeft"></label></li>
+              </ul>
             </div>
           </div>
-          <div class="">
-            <select id="dropdown" name="" class="dropdown">
-              <option disabled value="Selections"></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
+          <div class="rowTab">
+            <div class="labelComments">
+              <label for="comments">* Additional Information:</label>
+            </div>
+            <div class="rightTab">
+              <textarea name="comments" rows="8" cols="80" placeholder="Write your comments here.."></textarea>
+            </div>
           </div>
+          <div class="rowTab">
+            <div class="labelEmpty">
+              <input type="text" name="" value="" placeholder="submit signature" required>
+            </div>
+            <div class="rightTabRadio">
+              <button id="submit" type="submit" value="submit" action="/submit-form" method="get">Ready to Send</button>
+            </div>
+          </div>
+          <br>.
+          <br>
         </form>
+        <br>
+        <br>
       </div>
     </header>
-
-
     <footer>
     </footer>
-
-
   </body>
 </html>

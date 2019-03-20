@@ -1,3 +1,6 @@
+/*CSS STYLE FORM*/
+
+/*CSS COMMOM SECTION*/
 h1 {
   text-transform: uppercase;
   text-align: center;
@@ -39,11 +42,16 @@ input, label, textarea, select, button {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+input {
+  padding: 5px;
+}
 
+/*H1 TITLE SECTION*/
 #title {
   margin-bottom: 10px;
 }
 
+/*P DESCRIPTION SECTION*/
 #description {
   display: flex;
   text-align: center;
@@ -56,6 +64,8 @@ input, label, textarea, select, button {
   border-width: 1px 0px 1px 0px;
 }
 
+
+/*DIV LINE/LINE IN GENERAL*/
 #rowTab {
   display: flex;
   justify-content: center;
@@ -63,22 +73,21 @@ input, label, textarea, select, button {
 
 .rowTab {
   display: flex;
+  height: auto;
 }
 
+/*DIV LEFT IN GENERAL*/
 .labels {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    width: 40%;
-    padding: 5px;
-    margin-top: 10px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
-input {
-    padding: 5px;
-}
-
+/*DIV RIGHT IN GENERAL*/
 .rightTab {
   display: flex;
   flex-direction: column;
@@ -87,4 +96,97 @@ input {
   padding-top: 11px;
   margin-left: 2px;
   justify-content: center;
+}
+
+
+/*DROPDOWN SECTION*/
+select {
+  padding: 5px;
+}
+
+/*RADIO BUTTONS*/
+.labelRating {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  height: 50%;
+  width: 50%;
+  padding: 5px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.rightTabRadio {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 50%;
+  padding: 5px;
+  text-align: right;
+  margin-top: 20px;
+  margin-left: 2px;
+  justify-content: flex-start;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li.radio {
+  padding: 0px;
+  margin: 0px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  left: -43px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.textLeft {
+  float: left;
+  margin-right: 5px;
+}
+
+/*checkbox*/
+.rightTabCheckbox {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 50%;
+  padding: 5px;
+  text-align: right;
+  margin-top: 20px;
+  margin-left: 2px;
+  justify-content: flex-start;
+}
+
+/*TEXTAREA*/
+.labelComments {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+textarea {
+  padding: 5px;
+}
+
+/*SUBMIT BUTTON*/
+.labelEmpty {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  height: 50%;
+  width: 49.6%;
+  padding: 5px;
+  margin-top: 20px;
+  justify-content: flex-end;
 }
