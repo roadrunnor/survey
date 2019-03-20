@@ -21,7 +21,7 @@
               <label id="name-label" for="name-label">Full Name :</label>
             </div>
             <div class="rightTab">
-              <input id="name-label" type="text" name="name" value="" placeholder=" Enter your Name" required aria-required="true">
+              <input autofocus id="name" type="text" name="name" placeholder=" Enter your Name" required aria-required="true">
             </div>
           </div>
           <div class="rowTab">
@@ -29,23 +29,23 @@
               <label id="email-label" for="email-label">Email Address :</label>
             </div>
             <div class="rightTab">
-              <input id="email-label" type="text" name="email" value="" placeholder=" Enter a Valid Email Address" required aria-required="true">
+              <input id="email" type="email" name="email" value="" placeholder=" Enter a Valid Email Address" required>
             </div>
           </div>
           <div class="rowTab">
             <div class="labels">
-              <label id="phone-label" for="phone-label">Phone :</label>
+              <label id="phone-label" for="phone">Phone :</label>
             </div>
             <div class="rightTab">
-              <input id="phone-label" type="text" name="phone" value="" placeholder=" Enter your Phone Number" required aria-required="true">
+              <input type="number" name="phone" placeholder=" Enter your Phone Number" required>
             </div>
           </div>
           <div class="rowTab">
             <div class="labels">
-              <label id="number-label" for="number-label">Age :</label>
+              <label id="number-label" for="age">Age :</label>
             </div>
             <div class="rightTab">
-              <input id="number-label" class="input-field" type="number" name="age" value="" placeholder=" Enter your Age" min="1" max="110" required aria-required="true">
+              <input id="number" type="number" name="age" min="1" max="110" placeholder=" Enter your Age" required>
             </div>
           </div>
           <div class="rowTab">
@@ -122,4 +122,5 @@
     <footer>
     </footer>
   </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
